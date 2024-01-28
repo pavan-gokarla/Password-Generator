@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030637;
+    position: relative;
+}
+.main-content{
+   display: flex;
+   flex-direction: column;
+    width: 30%;
+    gap: 12px;
+    background-color: #3C0753;
+    padding: 12px;
+    border-radius: 12px;
+    color: wheat;
+}
+
+.password-show{
+    display: flex;
+    justify-content: space-around;
+}
+
+.password-show p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon{
+    position: relative;
+    cursor: pointer;
+    transition: 5s;
+}
+
+#copy{
+    position: absolute;
+    cursor: pointer;
+}
+
+#check{
+    position: absolute;
+}
+
+.show-password-length{
+    display: flex;
+    justify-content: space-around;
+}
+
+.set-password{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.bttn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: #720455;
+    color: wheat;
+    width: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1em;
+}
+
+.btn:hover{
+    background-color: wheat;
+    color: #720455 ;
+}
+
+@media  screen and (max-width: 767px) {
+    .main-content{
+        width: 50%;
+    }    
+}
+
+.opp{
+    opacity: 0;
+}
+
+.dis{
+    opacity: 1;
+}
+  
+.copied{
+    position: absolute;
+    top: 60px;
+    color: wheat;
+    background-color: #3C0753;
+    padding: 6px 8px;
+    border-radius: 12px;
+}

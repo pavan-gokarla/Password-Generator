@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="copied opp">
+            copied
+        </div>
+        <div class="main-content">
+            <div class="password-show">
+                <p id="show-password">Password</p>
+                <div class="icon">
+                    <i id="copy" class='bx bx-copy'></i>
+                    <i id="check" class='bx bx-check opp'  ></i>
+                </div>
+            </div>
+            <div class="show-password-length">
+                <p>Password Length</p>
+                <p id="length">0</p>
+            </div>
+            <div class="set-password">
+                <input type="range" name="" id="input-length" min="2" max="20" step="1">
+                <div>
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                <label for="uppercase">Include Uppercase</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                <label for="lowercase">Include LowerCase</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="numbers" id="numbers">
+                <label for="numbers">Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="symbols" id="symbols">
+                <label for="symbols">Symbols</label>
+                </div>
+            </div>
+            <div class="bttn">
+                <button class="btn">Generate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
